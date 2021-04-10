@@ -1,22 +1,8 @@
-# Docker-roda
+# Docker-nginx-roda
 
-Sample docker-enabled ruby (Roda) app as base for a JSON API.
+I used https://github.com/makevoid/docker-roda repo and add nginx,docker-compose.
+Firstly edit nginx.conf file for you domain and port.
 
-
-Sample commands:
-
-Build:
-
-    docker build -t droda .
-
-Run:
-
-    docker run droda  -p 3000:3000
-
-Rebuild and run:
-
-    docker build -t droda . && docker run -p 3000:3000 droda 
-
-Bash:
-
-    docker run  -ti droda bash
+commands:
+  docker-compose up --build
+  docker-compose up -d
